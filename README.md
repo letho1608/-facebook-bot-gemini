@@ -1,2 +1,2 @@
-# -facebook-bot-gemini
+# facebook-bot-gemini
 Use gemini on messenger
