@@ -1,19 +1,20 @@
 # 🌟 Messenger Bot with Google Gemini AI 🌟
 
-This is a **Messenger Bot** integrated with **Google Gemini AI**, built using `fca-utils` for Facebook Messenger interactions and the **Google Generative AI** API for generating intelligent responses. It's simple, fast, and handles user messages effortlessly.
+Welcome to the **Messenger Bot** integrated with **Google Gemini AI**! This bot uses `fca-utils` to interact with Facebook Messenger and leverages **Google Generative AI** for intelligent and dynamic responses. It’s fast, simple, and effortlessly handles user messages.
 
 ## 🚀 Features
-- **Real-time AI Responses**: Integrates with Google Gemini AI to generate dynamic replies based on user messages.
-- **No Command Prefixes**: Processes user inputs directly without requiring any command prefixes.
-- **Colorful Logs**: Uses `chalk` to display logs with different colors, making them easier to read.
+
+- **Real-time AI Responses**: Generates intelligent replies in real-time using the Google Gemini AI.
+- **Prefix-less Input**: No need for command prefixes; the bot processes inputs directly.
+- **Color-Coded Logs**: Uses `chalk` to display colorful, easy-to-read logs.
 
 ## 🛠️ Installation and Setup
 
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) installed.
-- **Google Gemini API Key** (We'll guide you on how to get it!).
-- **Facebook AppState** (Login credentials to control your bot on Messenger).
+- A **Google Gemini API Key**.
+- **Facebook AppState** for bot control over Messenger.
 
 ### 1. Clone the Repository
 
@@ -28,7 +29,7 @@ cd messenger-bot-gemini
 npm install
 ```
 
-### 3. Set Up Environment Variables
+### 3. Configure Environment Variables
 
 Create a `.env` file in the root directory and configure it like this:
 
@@ -38,45 +39,42 @@ APPSTATE=your_facebook_appstate
 PORT=3000
 ```
 
-### 4. Running the Bot
+### 4. Run the Bot
 
-Simply run the bot with the following command:
+Start the bot with:
 
 ```bash
 npm start
 ```
 
-## 🧩 How to Get the **Google Gemini API Key**?
+## 🧩 How to Get the **Google Gemini API Key**
 
-1. Visit the [Google AI Studio]((https://aistudio.google.com/app/apikey?hl=vi)).
-2. Create a new project and navigate to the **API & Services** section.
+1. Visit the [Google AI Studio](https://aistudio.google.com/app/apikey?hl=vi).
+2. Create a new project and navigate to **API & Services**.
 3. Enable the **Generative AI API (Gemini)**.
-4. Create credentials and copy the **API key**.
-5. Paste the API key into your `.env` file as shown above.
+4. Generate an API key and add it to your `.env` file.
 
-## 🔐 How to Get the **Facebook AppState**?
+## 🔐 How to Get the **Facebook AppState**
 
-You'll need the **Facebook AppState** to log in to Messenger without exposing your credentials.
+To log into Messenger without exposing your credentials, you'll need the **Facebook AppState**:
 
-1. Download the [Facebook AppState Egde Extension]((https://microsoftedge.microsoft.com/addons/detail/c3c-ufc-utility/ghipjppkbhlomcadpjldhhcoolhpgngm)) 
-or  Download the [Facebook AppState Chrome Extension]((https://chromewebstore.google.com/detail/c3c-ufc-utility/ekgmbjnloldgikngiachemodebfpkgdp)) 
-3. Log in to Facebook, then use the extension to extract your **AppState**.
-4. Copy the JSON string generated and store it in your `.env` file as `APPSTATE`.
+1. Install the [Facebook AppState Edge Extension](https://microsoftedge.microsoft.com/addons/detail/c3c-ufc-utility/ghipjppkbhlomcadpjldhhcoolhpgngm)  
+   or the [Facebook AppState Chrome Extension](https://chromewebstore.google.com/detail/c3c-ufc-utility/ekgmbjnloldgikngiachemodebfpkgdp).
+2. Log into Facebook and use the extension to extract your **AppState**.
+3. Copy the generated JSON and add it to your `.env` file as `APPSTATE`.
 
 ## 📝 Key Libraries and Technologies
 
-- **Node.js**: JavaScript runtime for building the bot.
-- **fca-utils**: For handling Facebook Messenger interactions.
-- **GoogleGenerativeAI**: For communicating with the Google Gemini API to generate responses.
+- **Node.js**: Platform for building the bot.
+- **fca-utils**: Handles Facebook Messenger interactions.
+- **GoogleGenerativeAI**: Integrates Google Gemini for AI-generated responses.
 - **dotenv**: Manages environment variables.
-- **chalk**: Adds color to logs for better visibility.
+- **chalk**: Adds colorful logging for better readability.
 
 ## 🛡️ Error Handling
 
-The bot has robust error handling to ensure that any issues, whether from API calls or Facebook Messenger, are properly logged and displayed.
+Robust error handling ensures that issues, whether from API calls or Facebook Messenger, are properly logged and displayed.
 
 ## 📜 License
 
 This project is licensed under the MIT License.
-
-
