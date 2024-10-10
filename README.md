@@ -61,7 +61,7 @@ To log into Messenger without exposing your credentials, you'll need the **Faceb
 1. Install the [Facebook AppState Edge Extension](https://microsoftedge.microsoft.com/addons/detail/c3c-ufc-utility/ghipjppkbhlomcadpjldhhcoolhpgngm)  
    or the [Facebook AppState Chrome Extension](https://chromewebstore.google.com/detail/c3c-ufc-utility/ekgmbjnloldgikngiachemodebfpkgdp).
 2. Log into Facebook and use the extension to extract your **AppState**.
-3. Copy the generated JSON and add it to your `.env` file as `APPSTATE`.
+3. Copy the generated Base64 and add it to your `.env` file as `APPSTATE`.
 
 ## 📝 Key Libraries and Technologies
 
