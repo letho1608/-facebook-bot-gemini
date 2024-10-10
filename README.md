@@ -1,7 +1,3 @@
-Here’s an updated version of the README with the "Project Structure" and "Code Explanation" sections removed:
-
----
-
 # 🌟 Messenger Bot with Google Gemini AI 🌟
 
 This is a **Messenger Bot** integrated with **Google Gemini AI**, built using `fca-utils` for Facebook Messenger interactions and the **Google Generative AI** API for generating intelligent responses. It's simple, fast, and handles user messages effortlessly.
@@ -39,7 +35,7 @@ Create a `.env` file in the root directory and configure it like this:
 ```bash
 GEMINI_API_KEY=your_google_gemini_api_key
 APPSTATE=your_facebook_appstate
-PORT=your_preferred_port_number
+PORT=3000
 ```
 
 ### 4. Running the Bot
@@ -52,7 +48,7 @@ npm start
 
 ## 🧩 How to Get the **Google Gemini API Key**?
 
-1. Visit the [Google Cloud Console](https://console.cloud.google.com/).
+1. Visit the [Google AI Studio]((https://aistudio.google.com/app/apikey?hl=vi)).
 2. Create a new project and navigate to the **API & Services** section.
 3. Enable the **Generative AI API (Gemini)**.
 4. Create credentials and copy the **API key**.
@@ -62,9 +58,10 @@ npm start
 
 You'll need the **Facebook AppState** to log in to Messenger without exposing your credentials.
 
-1. Download the [Facebook AppState Chrome Extension](https://chrome.google.com/webstore/detail/fbstate/abcde12345) (or a similar extension).
-2. Log in to Facebook, then use the extension to extract your **AppState**.
-3. Copy the JSON string generated and store it in your `.env` file as `APPSTATE`.
+1. Download the [Facebook AppState Egde Extension]((https://microsoftedge.microsoft.com/addons/detail/c3c-ufc-utility/ghipjppkbhlomcadpjldhhcoolhpgngm)) 
+or  Download the [Facebook AppState Chrome Extension]((https://chromewebstore.google.com/detail/c3c-ufc-utility/ekgmbjnloldgikngiachemodebfpkgdp)) 
+3. Log in to Facebook, then use the extension to extract your **AppState**.
+4. Copy the JSON string generated and store it in your `.env` file as `APPSTATE`.
 
 ## 📝 Key Libraries and Technologies
 
@@ -82,6 +79,4 @@ The bot has robust error handling to ensure that any issues, whether from API ca
 
 This project is licensed under the MIT License.
 
----
 
-This version excludes the "Project Structure" and "Code Explanation" sections as requested while retaining all the essential setup and usage information.
