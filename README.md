@@ -26,6 +26,7 @@ cd messenger-bot-gemini
 ### 2. Install Dependencies
 
 ```bash
+npm install --save-dev nodemon
 npm install
 ```
 
